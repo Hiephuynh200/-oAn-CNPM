@@ -36,6 +36,7 @@ h1 {
 h2 {
     font-size: 1.75rem;
     font-weight: 700;
+    /* color: #fff; */
 }
 
 p {
@@ -61,18 +62,31 @@ a {
 .navbar-nav .nav-item {
     margin: 0 10px;
 }
-
+/* sticky add sẽ thêm vào thẻ nav bằng jquery */
 nav.stickyadd {
     background-color: rgba(255, 255, 255, 0.9);
     transition: all 0.5s;
 }
 
-nav.stickyadd {
+nav.stickyadd .nav-item .nav-link {
     color: rgba(0, 0, 0, 0.7);
 }
 
 nav.stickyadd .navbar-brand {
-    color: rgba(0, 0, 0, 0.7);
+    /* color: rgba(0, 0, 0, 0.7); */
+}
+
+nav.stick {
+    transition: all 0.5s;
+}
+
+.hamburger {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.hamburger.whenscrolled {
+    color: #000;
 }
 /* hero */
 
@@ -87,4 +101,80 @@ nav.stickyadd .navbar-brand {
 
 .hero-content {
     color: #fff;
+}
+
+/* about section */
+.about-class {
+    margin-top: -200px;
+}
+
+.about-content {
+    background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+}
+
+.wrap {
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.wrap p,
+.wrap h2 {
+    color: #fff;
+}
+
+.wrap h2 {
+    margin-bottom: 20px;
+}
+
+/* service */
+.service-show {
+    text-align: center;
+}
+
+.service-class .card {
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.service-class i {
+    font-size: 50px;
+    background: linear-gradient(var(--pink-color), black);
+    /* thêm màu vào icon */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* team section */
+.team-class {
+    z-index: 3;
+    padding: 100px;
+}
+
+.team-class img {
+    z-index: 2;
+}
+
+.team-class .bg-white {
+    background: #fff;
+}
+
+.team-content {
+    padding: 15px;
+}
+
+.team-class .box {
+    position: relative;
+    z-index: 1;
+}
+
+.team-class .box::before {
+    content: ' ';
+    position: absolute;
+    height: 100%;
+    width: 32%;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+    background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
 }
