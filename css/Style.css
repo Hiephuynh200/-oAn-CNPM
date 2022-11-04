@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&family=Roboto+Condensed:wght@300;400&display=swap');
+:root {
+    box-sizing: border-box;
+    --blue-color: #5c84ec;
+    --pink-color: #f03c6d;
+    --paragraph-color: #70707070;
+    /* font-size: 62.5%; */
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--blue-color), var(--pink-color));
+    border-radius: 20px;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background: #f9fbff;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--paragraph-color);
+}
+
+a {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+/* navigation section */
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+nav.stickyadd {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s;
+}
+
+nav.stickyadd {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+nav.stickyadd .navbar-brand {
+    color: rgba(0, 0, 0, 0.7);
+}
+/* hero */
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(92, 132, 236, 0.8), rgba(92, 132, 236, 0.8)),
+        url(../assets/image/hom-notok.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    color: #fff;
+}
