@@ -59,9 +59,17 @@ a {
 }
 
 /* navigation section */
+.navbar {
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+}
 .navbar-nav .nav-item {
     margin: 0 10px;
 }
+
+nav.stickyadd .active {
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.7);
+}
+
 /* sticky add sẽ thêm vào thẻ nav bằng jquery */
 nav.stickyadd {
     background-color: rgba(255, 255, 255, 0.9);
@@ -89,6 +97,12 @@ nav.stick {
     color: #000;
 }
 /* hero */
+/* them anh dong */
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
 
 .hero {
     height: 100vh;
@@ -105,6 +119,7 @@ nav.stick {
 
 /* about section */
 .about-class {
+    position: relative;
     margin-top: -200px;
 }
 
@@ -177,4 +192,141 @@ nav.stick {
     left: -20px;
     z-index: -1;
     background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+}
+
+/* project section */
+.project-class i {
+    font-size: 50px;
+    background: linear-gradient(var(--pink-color), black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0 5px 20px;
+}
+
+.project-class .col-lg-3 {
+    padding: 0;
+}
+
+.card {
+    margin-right: 10px;
+}
+
+/* contact section */
+.contact-content {
+    margin-top: -20vh;
+}
+
+.contact-class form {
+    background-color: #fff;
+    padding: 100px;
+}
+
+.contact-addr {
+    background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+    padding: 90px;
+    color: #fff;
+}
+
+.contact-addr h2 {
+    text-align: center;
+}
+
+.contact-addr p {
+    color: #fff;
+    margin: 20px 0;
+}
+
+.social-icon {
+    text-align: center;
+    display: inline;
+}
+
+.social-icon i {
+    display: table-cell;
+    font-size: 20px;
+    width: 1%;
+}
+
+/* footer */
+footer {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: #0c003e;
+}
+
+footer p {
+    color: #fff;
+}
+
+/* phone */
+@media (max-width: 575.98px) {
+    h1 {
+        margin: 1.5px;
+        font-weight: 900;
+    }
+    h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .about-class {
+        margin-top: 0;
+    }
+    .service-class {
+        text-align: center;
+    }
+
+    .service-content {
+        margin-bottom: 50px;
+    }
+    .team-class {
+        text-align: center;
+        padding: 0;
+    }
+
+    .team-class h2 {
+        text-align: center;
+    }
+
+    .team-class .team-content {
+        margin-top: 50px;
+    }
+    .team-class .box::before {
+        content: ' ';
+        position: absolute;
+        height: 100%;
+        width: 57%;
+        top: -14px;
+        left: 48px;
+        z-index: -1;
+        background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+    }
+    .project-class {
+        text-align: center;
+    }
+
+    .project-class .card {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .project-class .col-lg-3 {
+        padding: 13px;
+    }
+
+    .contact-class {
+        text-align: center;
+    }
+
+    .contact-class form {
+        padding: 40px;
+        text-align: center;
+    }
+
+    footer {
+        height: 80px;
+        line-height: 80px;
+    }
 }

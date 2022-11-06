@@ -24,4 +24,18 @@ $(function () {
             $('nav').addClass('stick');
         }
     });
+
+    $('.navbar-nav a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate(
+            {
+                //.hash đọc thuộc tính href lấy phần URL bắt đầu bằng #
+                scrollTop: $(this.hash).offset().top,
+                // $("#home") ...
+            },
+            1000,
+        );
+    });
+    // load anh dong ra
+    particlesJS.load('particles-js', 'js/particlesjs-config.json');
 });

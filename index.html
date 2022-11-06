@@ -16,7 +16,7 @@
         />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="200">
         <header>
             <!-- navbar-expand-md dùng để tự xử lí kích thước màn hình máy tính điện thoai -->
             <nav class="navbar navbar-expand-md fixed-top stick">
@@ -31,19 +31,19 @@
                     <div class="collapse navbar-collapse" id="navbarbtn">
                         <ul class="navbar-nav ms-lg-auto">
                             <li class="nav-item">
-                                <a href="#home" class="nav-link active">Home</a>
+                                <a href="#home" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#about" class="nav-link active">About</a>
+                                <a href="#about-id" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#service" class="nav-link active">Service</a>
+                                <a href="#service-id" class="nav-link">Service</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#project" class="nav-link active">Project</a>
+                                <a href="#project-id" class="nav-link">Project</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#contact" class="nav-link active">Contact</a>
+                                <a href="#contact-id" class="nav-link">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -51,6 +51,8 @@
             </nav>
         </header>
         <main>
+            <!-- load anh dong -->
+            <div id="particles-js"></div>
             <section id="home" class="hero">
                 <div class="container h-100">
                     <div class="row h-100">
@@ -164,10 +166,124 @@
                     </div>
                 </div>
             </section>
+
+            <section id="project-id" class="project-class mt-10">
+                <!--  cung cấp một vùng chứa có chiều rộng cố định responsive. -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col mb-5">
+                            <h2>PROJECTS</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <div class="card-body">
+                                    <h2 class="card-text">Ip App</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, perferendis!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <div class="card-body">
+                                    <h2 class="card-text">Ip App</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, perferendis!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <div class="card-body">
+                                    <h2 class="card-text">Ip App</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, perferendis!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <div class="card-body">
+                                    <h2 class="card-text">Angular</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, perferendis!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact-id" class="contact-class mt-10">
+                <!--  cung cấp một vùng chứa có chiều rộng đầy đủ, kéo dài toàn bộ chiều rộng của khung nhìn. -->
+                <div class="container-fulid">
+                    <div class="row">
+                        <div class="col bg-contact">
+                            <img
+                                style="
+                                    height: 40vh;
+                                    width: 100%;
+                                    background-position: 200 200;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                "
+                                src="./assets/image/sili2.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="container contact-content">
+                    <!-- g-0 : no-gutter -->
+                    <div class="row g-0">
+                        <div class="col-lg-8">
+                            <form>
+                                <div class="form-group mt-2">
+                                    <input type="name" class="form-control" placeholder="Name" />
+                                </div>
+                                <div class="form-group mt-2">
+                                    <input type="email" class="form-control" placeholder="Email" />
+                                </div>
+                                <div class="form-group mt-2">
+                                    <input type="email" class="form-control" placeholder="Subject" />
+                                </div>
+                                <div class="form-group mt-2">
+                                    <textarea name="" rows="5" class="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-2">submit 5</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-4 contact-addr">
+                            <h2>CONTACT US</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, doloribus?</p>
+                            <p>
+                                Phone Number: <br />
+                                0767537243
+                            </p>
+                            <p>
+                                Mobile Number: <br />
+                                0818263712
+                            </p>
+                            <div class="social-icon">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="mt-10">
+                <p>&copy: 2022 Silicon Tech, All Rights Reserved</p>
+            </footer>
         </main>
 
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/app.js"></script>
+        <!-- thêm ảnh động -->
+        <script src="js/particles.js"></script>
     </body>
 </html>
