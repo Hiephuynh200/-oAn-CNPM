@@ -59,15 +59,14 @@ a {
 }
 
 /* navigation section */
-.navbar {
-    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
-}
+
 .navbar-nav .nav-item {
     margin: 0 10px;
+    transition: all 0.5s ease-in-out;
 }
 
-nav.stickyadd .active {
-    border-bottom: 1.5px solid rgba(0, 0, 0, 0.7);
+.navbar-nav .nav-item:hover {
+    color: #0c003e;
 }
 
 /* sticky add sẽ thêm vào thẻ nav bằng jquery */
@@ -80,10 +79,6 @@ nav.stickyadd .nav-item .nav-link {
     color: rgba(0, 0, 0, 0.7);
 }
 
-nav.stickyadd .navbar-brand {
-    /* color: rgba(0, 0, 0, 0.7); */
-}
-
 nav.stick {
     transition: all 0.5s;
 }
@@ -93,16 +88,13 @@ nav.stick {
     font-size: 1.5rem;
 }
 
-.hamburger.whenscrolled {
-    color: #000;
-}
 /* hero */
 /* them anh dong */
-#particles-js {
+/* #particles-js {
     height: 100vh;
     width: 100%;
     position: absolute;
-}
+} */
 
 .hero {
     height: 100vh;
@@ -141,12 +133,13 @@ nav.stick {
     margin-bottom: 20px;
 }
 
-/* service */
+/* serv ice */
 .service-show {
     text-align: center;
 }
 
 .service-class .card {
+    /* text-align: center; */
     padding: 25px;
     margin-bottom: 30px;
 }
@@ -209,10 +202,12 @@ nav.stick {
 }
 
 .card {
+    text-align: center;
     margin-right: 10px;
 }
 
 /* contact section */
+
 .contact-content {
     margin-top: -20vh;
 }

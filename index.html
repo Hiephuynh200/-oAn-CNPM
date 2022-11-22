@@ -19,16 +19,18 @@
     <body data-spy="scroll" data-target=".navbar" data-offset="200">
         <header>
             <!-- navbar-expand-md dùng để tự xử lí kích thước màn hình máy tính điện thoai -->
-            <nav class="navbar navbar-expand-md fixed-top stick">
+            <nav class="navbar navbar-expand-md fixed-top">
                 <div class="container">
                     <a href="#" class="navbar-brand">
                         <h2>Silicon</h2>
                     </a>
                     <!-- navbar toggler để tạo ra một Toggler Button, nút bấm này chỉ xuất hiện khi màn hình dưới kích thước thiết lập bởi .navbar-expand{-sm|-md|-lg|-xl}, khi bấm vào nó nó sẽ mở rộng Navbar đổ xuống để xuất hiện các thành phần bị ẩn -->
-                    <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarbtn">
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarbtn">
                         <span class="hamburger"><i class="fa-solid fa-bars"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarbtn">
+                    </button> -->
+
+                    <div class="navbar" id="navbarbtn">
+                        <!-- ms-lg-auto: margin-left-auto -->
                         <ul class="navbar-nav ms-lg-auto">
                             <li class="nav-item">
                                 <a href="#home" class="nav-link">Home</a>
@@ -52,7 +54,7 @@
         </header>
         <main>
             <!-- load anh dong -->
-            <div id="particles-js"></div>
+            <!-- <div id="particles-js"></div> -->
             <section id="home" class="hero">
                 <div class="container h-100">
                     <div class="row h-100">
@@ -69,6 +71,8 @@
             <section id="about-id" class="about-class">
                 <div class="container">
                     <div class="row">
+                        <!-- px: padding right,left -->
+                        <!-- col-lg-6: column, large. flex, width -->
                         <div class="col-lg-6 px-0">
                             <img src="./assets/image/okEl-merkat-menu-768x532.jpg" class="img-fluid" alt="" />
                         </div>
@@ -284,6 +288,6 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/app.js"></script>
         <!-- thêm ảnh động -->
-        <script src="js/particles.js"></script>
+        <!-- <script src="js/particles.js"></script> -->
     </body>
 </html>
