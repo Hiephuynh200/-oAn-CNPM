@@ -11,15 +11,15 @@ $(function () {
         }
     });
 
-    $('.navbar-nav a[href^="#"]').on('click', function (e) {
-        $('html, body').animate(
-            {
-                //.hash đọc thuộc tính href lấy phần URL bắt đầu bằng #
-                scrollTop: $(this.hash).offset().top,
-            },
-            100,
-        );
-    });
+    // $('.navbar-nav a[href^="#"]').on('click', function (e) {
+    //     $('html, body').animate(
+    //         {
+    //             //.hash đọc thuộc tính href lấy phần URL bắt đầu bằng #
+    //             scrollTop: $(this.hash).offset().top,
+    //         },
+    //         100,
+    //     );
+    // });
     // // load anh dong ra
     // particlesJS.load('particles-js', 'js/particlesjs-config.json');
 });

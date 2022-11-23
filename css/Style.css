@@ -79,13 +79,13 @@ nav.stickyadd .nav-item .nav-link {
     color: rgba(0, 0, 0, 0.7);
 }
 
-nav.stick {
-    transition: all 0.5s;
+nav.stickyadd .nav-item .nav-link:hover {
+    color: #0c003e;
 }
 
-.hamburger {
-    color: #fff;
-    font-size: 1.5rem;
+/* thêm hiệu ứng stick */
+nav.stick {
+    transition: all 0.5s;
 }
 
 /* hero */
